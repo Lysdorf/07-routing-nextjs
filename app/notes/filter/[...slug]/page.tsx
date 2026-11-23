@@ -4,7 +4,7 @@ import {
   QueryClient,
   dehydrate,
 } from "@tanstack/react-query";
-import NotesClient from "./NotesClient.client";
+import NotesClient from "./Notes.client";
 
 interface NotesPageProps {
   params: Promise<{ slug: string[] }>;
