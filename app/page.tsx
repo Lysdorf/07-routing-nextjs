@@ -5,7 +5,7 @@ export default function Home() {
     <section>
       <h1>Welcome to NoteHub</h1>
       <p>Keep all your notes in one place.</p>
-      <Link href="/notes">View all notes</Link>
+      <Link href="/notes/filter/all">View all notes</Link>
     </section>
   );
 }
