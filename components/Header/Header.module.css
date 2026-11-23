@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333;
+}
+
+.navigation {
+  display: flex;
+  gap: 24px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #333;
+}
