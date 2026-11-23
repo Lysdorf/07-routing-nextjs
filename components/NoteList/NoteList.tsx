@@ -10,24 +10,14 @@ import css from "./NoteList.module.css";
 
 interface NoteListProps {
   notes: Note[];
-  currentPage: number;
-  onPageChange: (page: number) => void;
 }
 
-export default function NoteList({
-  notes,
-  currentPage,
-  onPageChange,
-}: NoteListProps) {
+export default function NoteList({ notes }: NoteListProps) {
   const queryClient = useQueryClient();
 
   const deleteMutation = useMutation({
     mutationFn: deleteNote,
     onSuccess: async () => {
-      if (notes.length === 1 && currentPage > 1) {
-        onPageChange(currentPage - 1);
-      }
-
       await queryClient.invalidateQueries({
         queryKey: ["notes"],
       });

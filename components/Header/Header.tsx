@@ -10,7 +10,7 @@ export default function Header() {
 
       <nav className={css.navigation}>
         <Link href="/">Home</Link>
-        <Link href="/notes">Notes</Link>
+        <Link href="/notes/filter/all">Notes</Link>
       </nav>
     </header>
   );

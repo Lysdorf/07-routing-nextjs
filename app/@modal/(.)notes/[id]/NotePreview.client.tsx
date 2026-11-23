@@ -25,6 +25,7 @@ export default function NotePreviewClient({ id }: NotePreviewProps) {
   } = useQuery({
     queryKey: ["note", id],
     queryFn: () => fetchNoteById(id),
+    refetchOnMount: false,
   });
 
   if (isLoading) {

@@ -75,9 +75,7 @@ export default function NotesClient({ tag }: NotesClientProps) {
 
       {data && data.notes.length > 0 ? (
         <NoteList
-          notes={data.notes}
-          currentPage={currentPage}
-          onPageChange={setCurrentPage}
+          notes={data?.notes ?? []}
         />
       ) : (
         <p>No notes found.</p>
